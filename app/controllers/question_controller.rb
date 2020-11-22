@@ -4,7 +4,8 @@ class QuestionController < ApplicationController
   end
 
   def answer
-    @answer = ["That´s a stupid question", "Your future is full of failure", "Nothing matters anymore", "I'ts 2020 bitch"]
+    @options = ["That´s a stupid question", "Your future is full of failure", "Nothing matters anymore", "I'ts 2020 bitch"]
+    @answer = @options.sample
   end
 
   def show
@@ -15,7 +16,6 @@ class QuestionController < ApplicationController
       @answer = "Thats not a question, silly."
     else
       return @answer
-      @answer = answer.sample
     end
   end
 end
