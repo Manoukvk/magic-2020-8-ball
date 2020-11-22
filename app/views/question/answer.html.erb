@@ -1,0 +1,19 @@
+<h1>Here is your answer!</h1>
+
+<blockquote>
+  <p>
+    <% if @question.blank? %>
+      <%= @question %>
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  
+</blockquote>
+
+<blockquote class="answer">
+  <p><%= @answer %></p>
+ 
+</blockquote>
+
+<%= link_to "Ask a new question", question_path, class: "new-question" %>
