@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'question', as: :question
-  get 'answer', as: :answer
+  root 'pages#home'
+  get 'question', to: 'question#question', as: :question
+  get 'answer', to: 'question#answer', as: :answer
 end
