@@ -1,6 +1,6 @@
 class QuestionController < ApplicationController
      def question
-    @question = gets.chomp
+    #@question = gets.chomp
   end
 
   def answer
